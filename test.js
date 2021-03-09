@@ -25,4 +25,37 @@ describe('ChallengeTemplate', () => {
         assert.strictEqual(result,expected)
     })
 
+    /**
+     * TEST DESCRIPTION
+     */
+    it('Test3: when kingWhite="F1", rookBlack= "D2", bishopBlack="B5", knightBlack="F3" should return "jaque mate"', () => {
+
+        let result = challengeFunction("F1","D2","B5","F3")
+        let expected = "jaque mate"
+
+        assert.strictEqual(result,expected)
+    })
+
+    /**
+     * TEST DESCRIPTION
+     */
+    it('Test4: when kingWhite="H7", rookBlack= "G3", bishopBlack="B5", knightBlack="F7" should return "jaque mate"', () => {
+
+        let result = challengeFunction("H7","G3","B5","F7")
+        let expected = "jaque mate"
+
+        assert.strictEqual(result,expected)
+    })
+
+    /**
+     * TEST DESCRIPTION
+     */
+    it('Test5: when kingWhite="C4", rookBlack= "C2", bishopBlack="F6", knightBlack="C6" should return "jaque"', () => {
+
+        let result = challengeFunction("C4","C2","F6","C6")
+        let expected = "jaque"
+
+        assert.strictEqual(result,expected)
+    })
+
 })

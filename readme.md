@@ -4,6 +4,14 @@ El rey de las blancas está solo y acorralado. Un alfil, una torre y un caballer
 
 Dada la posición del Rey (blanco) y la posicion de la torre, alfil y caballero (negro) definir si es jaque o jaque mate.
 
+### Jaque
+
+En el juego de ajedrez, un jaque es una amenaza inmediata de capturar al rey. Se dice que un rey amenazado de este modo se encuentra en jaque.
+
+### Jaque mate
+
+Jaque mate es una posición del ajedrez en la que el rey se encuentra amenazado y esta situación no puede cambiarse mediante ninguna jugada legal. El jugador que consiga poner en jaque mate al rey adversario, será el ganador de la partida.
+
 ### Movimiento del Caballero (knight)
 El caballero puede moverse a un cuadrado que tiene dos cuadrados 
 horizontalmente y un cuadrado verticalmente, o dos cuadrados verticalmente 
@@ -89,7 +97,20 @@ entonces debe ser = "jaque"
 - **Parametros**: (kingWhite="D1", rookBlack= "H2", bishopBlack="E3", knightBlack="C3" )
 - **Resultado esperado**: "jaque"
 ---
+### Test 3  
 
+- **Parametros**: (kingWhite="F1", rookBlack= "D2", bishopBlack="B5", knightBlack="F3" )
+- **Resultado esperado**: "jaque mate"
+---
+### Test 4
 
+- **Parametros**: (kingWhite="H7", rookBlack= "G3", bishopBlack="F5", knightBlack="F7" )
+- **Resultado esperado**: "jaque mate"
+---
+### Test 5
+
+- **Parametros**: (kingWhite="C4", rookBlack= "C2", bishopBlack="F6", knightBlack="C6" )
+- **Resultado esperado**: "jaque"
+---
 
 
